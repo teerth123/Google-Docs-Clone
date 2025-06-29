@@ -72,3 +72,14 @@ body {
     padding: 1rem 1.5rem;
   }
 }
+
+.simple-editor-content ::selection {
+  background-color: #b3d4fc; /* Light blue background for selected text */
+  color: #000; /* Black text color */
+}
+
+.simple-editor-content .tiptap.ProseMirror ::selection,
+.simple-editor-content .tiptap.ProseMirror ::-moz-selection {
+  background-color: #b3d4fc !important; 
+  color: #000             !important;
+}
